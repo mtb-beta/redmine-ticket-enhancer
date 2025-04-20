@@ -1,5 +1,7 @@
 # Redmine Ticket Enhancer
 
+**⚠️ 注意: このプロジェクトは現在開発中です ⚠️**
+
 Redmine Ticket Enhancerは、Redmineのチケット作成および更新時の説明欄とコメント欄の入力を支援するためのブラウザ拡張機能です。
 
 ## 機能
