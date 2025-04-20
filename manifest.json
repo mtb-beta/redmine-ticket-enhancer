@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Redmine Ticket Enhancer",
+  "version": "0.1.0",
+  "description": "Redmineのチケット作成・編集を支援する拡張機能",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*/issues/*", "*://*/*/projects/*/issues/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
